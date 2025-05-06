@@ -1274,3 +1274,7 @@ Did you mean one of these?
 #38 C:\\Users\\Danger_Mihail\\Servak\\AvtoService\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
 #39 {main}
 "} 
+[2025-05-06 19:29:37] local.ERROR: Ошибка при обновлении заказа: No query results for model [App\Models\Master].  
+[2025-05-06 19:30:05] local.ERROR: Ошибка при обновлении заказа: No query results for model [App\Models\Master].  
+[2025-05-06 19:30:52] local.ERROR: Ошибка при обновлении заказа: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '2060-12-12 18:00:00' for column 'EndTime' at row 1 (Connection: mysql, SQL: update `orders` set `status` = В работе, `description` = Замена капота, `price` = 19000, `EndTime` = 2060-12-12 18:00:00, `orders`.`updated_at` = 2025-05-06 19:30:52 where `id` = 1)  
+[2025-05-06 19:33:03] local.ERROR: Ошибка при обновлении заказа: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '2064-11-12 18:00:00' for column 'EndTime' at row 1 (Connection: mysql, SQL: update `orders` set `status` = Выполнен, `description` = Ещё раз замена Капота, `price` = 999999, `EndTime` = 2064-11-12 18:00:00, `orders`.`updated_at` = 2025-05-06 19:33:03 where `id` = 2)  
